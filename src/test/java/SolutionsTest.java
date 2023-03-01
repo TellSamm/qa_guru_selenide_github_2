@@ -19,7 +19,7 @@ public class SolutionsTest {
     }
 
     @Test
-    void hoverSolutionsTest(){
+    void hoverSolutionsTest() {
         $("[aria-label=Global]").$(byText("Solutions")).hover();
         $("div[class^='Header'] a[href~='/enterprise']").click();
         $("div[class^='col'] h1[class^='h1-mktg']").shouldHave(text("Build like the best"));
